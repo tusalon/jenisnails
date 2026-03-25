@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Emy nails
+// sw.js - Service Worker para Jenys Nails
 
-const CACHE_NAME = 'amynails-v1';
+const CACHE_NAME = 'jenisnails-v1';
 const urlsToCache = [
-  '/amynails/',
-  '/amynails/index.html',
-  '/amynails/admin.html',
-  '/amynails/admin-login.html',
-  '/amynails/setup-wizard.html',
-  '/amynails/editar-negocio.html',
-  '/amynails/manifest.json',
-  '/amynails/icons/icon-72x72.png',
-  '/amynails/icons/icon-96x96.png',
-  '/amynails/icons/icon-128x128.png',
-  '/amynails/icons/icon-144x144.png',
-  '/amynails/icons/icon-152x152.png',
-  '/amynails/icons/icon-192x192.png',
-  '/amynails/icons/icon-384x384.png',
-  '/amynails/icons/icon-512x512.png'
+  '/jenisnails/',
+  '/jenisnails/index.html',
+  '/jenisnails/admin.html',
+  '/jenisnails/admin-login.html',
+  '/jenisnails/setup-wizard.html',
+  '/jenisnails/editar-negocio.html',
+  '/jenisnails/manifest.json',
+  '/jenisnails/icons/icon-72x72.png',
+  '/jenisnails/icons/icon-96x96.png',
+  '/jenisnails/icons/icon-128x128.png',
+  '/jenisnails/icons/icon-144x144.png',
+  '/jenisnails/icons/icon-152x152.png',
+  '/jenisnails/icons/icon-192x192.png',
+  '/jenisnails/icons/icon-384x384.png',
+  '/jenisnails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/amynails/icons/icon-192x192.png');
+            return caches.match('/jenisnails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Emy nails');
+console.log('✅ Service Worker configurado para Jenys Nails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
