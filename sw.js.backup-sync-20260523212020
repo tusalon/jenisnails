@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Jenys Nails
 
-const CACHE_NAME = 'jenisnails-v29';
+const CACHE_NAME = 'jenisnails-v25';
 const urlsToCache = [
   '/jenisnails/',
   '/jenisnails/index.html',
