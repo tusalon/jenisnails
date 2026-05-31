@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Jenys Nails
 
-const CACHE_NAME = 'jenisnails-v29';
+const CACHE_NAME = 'jenisnails-v47';
 const urlsToCache = [
   '/jenisnails/',
   '/jenisnails/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/jenisnails/icons/icon-152x152.png',
   '/jenisnails/icons/icon-192x192.png',
   '/jenisnails/icons/icon-384x384.png',
-  '/jenisnails/icons/icon-512x512.png'
+  '/jenisnails/icons/icon-512x512.png',
+  '/jenisnails/vendor/react.production.min.js',
+  '/jenisnails/vendor/react-dom.production.min.js',
+  '/jenisnails/vendor/babel.min.js',
+  '/jenisnails/vendor/bcrypt.min.js',
+  '/jenisnails/vendor/tailwind-browser.js',
+  '/jenisnails/vendor/lucide/lucide.css',
+  '/jenisnails/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================

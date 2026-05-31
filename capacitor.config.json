@@ -1,0 +1,12 @@
+{
+  "appId": "com.tusalon.jenisnails",
+  "appName": "Jenys Nails",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

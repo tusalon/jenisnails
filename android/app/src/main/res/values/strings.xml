@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Jenys Nails</string>
+    <string name="title_activity_main">Jenys Nails</string>
+    <string name="package_name">com.tusalon.jenisnails</string>
+    <string name="custom_url_scheme">com.tusalon.jenisnails</string>
+</resources>
